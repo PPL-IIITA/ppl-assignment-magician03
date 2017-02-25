@@ -19,7 +19,7 @@
         {
             "name" : "girl3",
             "rating" : 80,
-            "maintainenceBudget" : 8000,
+            "maintainenceBudget" : 7000,
             "intelligence" : 9,
             "criteriaToDate" : "intelligent",
             "isCommited" : false
@@ -123,7 +123,7 @@
         },
         {
             "id" : 7,
-            "price" : 1500,
+            "price" : 900,
             "value" : 1000,
             "type" : "Luxury"
         },

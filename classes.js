@@ -23,11 +23,10 @@ module.exports = {
         },
 
     Gift: class Gift {
-        constructor(price, value, boyName, girlName, giftType) {
+        constructor(id, price, value, giftType) {
+            this.id = id;
             this.price = price;
             this.value = value;
-            this.fromBoy = boyName;
-            this.toGirl = girlName;
             this.type = giftType;
         }
     }

@@ -1,0 +1,110 @@
+---couples allocated-----
+[ { commitId: 1,
+    boyDesc: 
+     Boy {
+       name: 'boy1',
+       attractiveness: 80,
+       intelligence: 7,
+       budget: 8500,
+       minRating: 60,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     Girl {
+       name: 'girl1',
+       rating: 65,
+       maintainenceBudget: 5000,
+       intelligence: 2,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 2,
+    boyDesc: 
+     Boy {
+       name: 'boy6',
+       attractiveness: 80,
+       intelligence: 6,
+       budget: 7000,
+       minRating: 40,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     Girl {
+       name: 'girl2',
+       rating: 65,
+       maintainenceBudget: 6500,
+       intelligence: 1,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 3,
+    boyDesc: 
+     Boy {
+       name: 'boy7',
+       attractiveness: 75,
+       intelligence: 8,
+       budget: 7500,
+       minRating: 65,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     Girl {
+       name: 'girl3',
+       rating: 80,
+       maintainenceBudget: 7000,
+       intelligence: 9,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'choosy' } } ]
+
+-----printing gifts exchanged and other data-------
+{ commitId: 1,
+  boy: 'boy1',
+  girl: 'girl1',
+  happiness: 3.0300000000000002,
+  compatibility: 3520,
+  giftList: 
+   [ Gift { id: 1, price: 500, value: 500, type: 'Utility' },
+     Gift { id: 4, price: 500, value: 500, type: 'Essential' },
+     Gift { id: 6, price: 500, value: 1000, type: 'Essential' },
+     Gift { id: 3, price: 750, value: 1000, type: 'Utility' },
+     Gift { id: 7, price: 900, value: 1000, type: 'Luxury' },
+     Gift { id: 2, price: 1000, value: 750, type: 'Utility' },
+     Gift { id: 5, price: 1000, value: 1500, type: 'Essential' } ] }
+{ commitId: 2,
+  boy: 'boy6',
+  girl: 'girl2',
+  happiness: 1.095310179804325,
+  compatibility: 520,
+  giftList: 
+   [ Gift { id: 1, price: 500, value: 500, type: 'Utility' },
+     Gift { id: 4, price: 500, value: 500, type: 'Essential' },
+     Gift { id: 6, price: 500, value: 1000, type: 'Essential' },
+     Gift { id: 3, price: 750, value: 1000, type: 'Utility' },
+     Gift { id: 7, price: 900, value: 1000, type: 'Luxury' },
+     Gift { id: 2, price: 1000, value: 750, type: 'Utility' },
+     Gift { id: 5, price: 1000, value: 1500, type: 'Essential' },
+     Gift { id: 9, price: 2000, value: 1000, type: 'Luxury' } ] }
+{ commitId: 3,
+  boy: 'boy7',
+  girl: 'girl3',
+  happiness: 0.6420955325911625,
+  compatibility: 506,
+  giftList: 
+   [ Gift { id: 1, price: 500, value: 500, type: 'Utility' },
+     Gift { id: 4, price: 500, value: 500, type: 'Essential' },
+     Gift { id: 6, price: 500, value: 1000, type: 'Essential' },
+     Gift { id: 3, price: 750, value: 1000, type: 'Utility' },
+     Gift { id: 7, price: 900, value: 1000, type: 'Luxury' },
+     Gift { id: 2, price: 1000, value: 750, type: 'Utility' },
+     Gift { id: 5, price: 1000, value: 1500, type: 'Essential' },
+     Gift { id: 9, price: 2000, value: 1000, type: 'Luxury' },
+     Gift { id: 8, price: 2500, value: 1500, type: 'Luxury' } ] }
+
+----sorted order acc to happiness
+boy7  <=>  girl3
+boy6  <=>  girl2
+
+----sorted order acc to compatibility
+boy7  <=>  girl3
+boy6  <=>  girl2
