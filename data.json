@@ -1,0 +1,143 @@
+{
+    "girls" : [ 
+        {
+            "name" : "girl1",
+            "rating" : 65,
+            "maintainenceBudget" : 5000,
+            "intelligence" : 2,
+            "criteriaToDate" : "rich",
+            "isCommited" : false
+        },
+        {
+            "name" : "girl2",
+            "rating" : 65,
+            "maintainenceBudget" : 6500,
+            "intelligence" : 1,
+            "criteriaToDate" : "attractive",
+            "isCommited" : false
+        },
+        {
+            "name" : "girl3",
+            "rating" : 80,
+            "maintainenceBudget" : 8000,
+            "intelligence" : 9,
+            "criteriaToDate" : "intelligent",
+            "isCommited" : false
+        }
+    ],
+
+    "boys" : [
+        {
+            "name" : "boy1",
+            "attractiveness" : 80,
+            "intelligence" : 7,
+            "budget" : 8500,
+            "minRating" : 60,
+            "isCommited" : false
+        },
+        {
+            "name" : "boy2",
+            "attractiveness" : 60,
+            "intelligence" : 7,
+            "budget" : 8000,
+            "minRating" : 70,
+            "isCommited" : false
+        },
+        {
+            "name" : "boy3",
+            "attractiveness" : 50,
+            "intelligence" : 9,
+            "budget" : 6000,
+            "minRating" : 50,
+            "isCommited" : false
+        },
+        {
+            "name" : "boy4",
+            "attractiveness" : 70,
+            "intelligence" : 8,
+            "budget" : 9000,
+            "minRating" : 75,
+            "isCommited" : false
+        },
+        {
+            "name" : "boy5",
+            "attractiveness" : 85,
+            "intelligence" :9,
+            "budget" : 7000,
+            "minRating" : 70,
+            "isCommited" : false
+        },
+        {
+            "name" : "boy6",
+            "attractiveness" : 80,
+            "intelligence" : 6,
+            "budget" : 7000,
+            "minRating" : 40,
+            "isCommited" : false
+        },
+        {
+            "name" : "boy7",
+            "attractiveness" : 75,
+            "intelligence" : 8,
+            "budget" : 7500,
+            "minRating" : 65,
+            "isCommited" : false
+        }
+    ],
+    "gifts" : [
+        {
+            "id" : 1,
+            "price" : 500,
+            "value" : 500,
+            "type" : "Utility"
+        },
+        {
+            "id" : 2,
+            "price" : 1000,
+            "value" : 750,
+            "type" : "Utility"
+        },
+        {
+            "id" : 3,
+            "price" : 750,
+            "value" : 1000,
+            "type" : "Utility"
+        },
+        {
+            "id" : 4,
+            "price" : 500,
+            "value" : 500,
+            "type" : "Essential"
+        },
+        {
+            "id" : 5,
+            "price" : 1000,
+            "value" : 1500,
+            "type" : "Essential"
+        },
+        {
+            "id" : 6,
+            "price" : 500,
+            "value" : 1000,
+            "type" : "Essential"
+        },
+        {
+            "id" : 7,
+            "price" : 1500,
+            "value" : 1000,
+            "type" : "Luxury"
+        },
+        {
+            "id" : 8,
+            "price" : 2500,
+            "value" : 1500,
+            "type" : "Luxury"
+        },
+        {
+            "id" : 9,
+            "price" : 2000,
+            "value" : 1000,
+            "type" : "Luxury"           
+        }
+    ]
+}
