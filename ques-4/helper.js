@@ -11,37 +11,39 @@ var GirlByIntelligent = require('./classes.js').GirlByIntelligent;
 module.exports = {
 
     /**
-     * Allocates Couples according to question criteria
+     * Allocate couples
      * 
-     * @param {object} girls 
-     * @param {object} boys 
-     * @returns {object} couples
+     * @param {any} girls 
+     * @param {any} boys 
+     * @param {any} couples 
+     * @param {any} brokeUp 
+     * @returns 
      */
-    allocateCouples: function (girls, boys) {
+    allocateCouples: function (girls, boys, couples, brokeUp) {
         var gi = 0;
         var bi = 0;
         var countGi = 0;
-        var commits = 0;
+
+        var commits = couples.length;
         const girlCommitTypes = ["choosy", "normal", "desperate"];
         const boyCommitTypes = ["miser", "generous", "geeks"];
-        var couples = [];
         while (commits < girls.length && gi < girls.length) {
-            
+
             var girl = girls[gi];
             var boy = boys[bi];
-            
+            var breakUpFlag = 0;
             var couple = {};
-            if (boy.isCommited == false && girl.isCommited == false && (boy.budget >= girl.maintenanceBudget) &&
+            if (boy.isCommited === false && girl.isCommited === false && (boy.budget >= girl.maintenanceBudget) &&
                 (girl.rating >= boy.minRating)) {
                 if (girl.criteriaToDate == "intelligent") {
                     if (boy.intelligence < 50) {
                         bi += 1;
                         bi = bi % (boys.length);
                         countGi += 1;
-                         if (countGi >= boys.length) {
+                        if (countGi >= boys.length) {
                             gi += 1;
                             countGi = 0;
-                        }                       
+                        }
                         continue;
                     }
                 } else if (girl.criteriaToDate == "attractive") {
@@ -52,7 +54,7 @@ module.exports = {
                         if (countGi >= boys.length) {
                             gi += 1;
                             countGi = 0;
-                        }                        
+                        }
                         continue;
                     }
                 } else if (girl.criteriaToDate == "rich") {
@@ -68,6 +70,23 @@ module.exports = {
                     }
                 }
 
+                for (i = 0; i < brokeUp.length; i++) {
+                    if (boys.indexOf(brokeUp[i].boyDesc) == bi) {
+                        bi += 1;
+                        bi = bi % (boys.length);
+                        countGi += 1;
+                        if (countGi >= boys.length) {
+                            gi += 1;
+                            countGi = 0;
+                        }
+                        breakUpFlag = 1;
+                        break;
+                    }
+                }
+
+                if (breakUpFlag == 1) continue;
+
+                console.log(girls[gi].name + ' ' + boys[bi].name);
                 boy.isCommited = true;
                 girl.isCommited = true;
                 girl.commitType = girlCommitTypes[Math.floor(Math.random() * 3)];
@@ -85,15 +104,15 @@ module.exports = {
                 bi += 1;
                 bi = bi % (boys.length);
                 countGi += 1;
-            }
-            if (countGi >= boys.length) {
-                gi += 1;
-                countGi = 0;
+                if (countGi >= boys.length) {
+                    gi += 1;
+                    countGi = 0;
+                }
             }
 
         }
 
-        return couples;
+        return;
     },
 
     /**
@@ -108,7 +127,7 @@ module.exports = {
 
         for (i = 0; i < 10; i++) {
             for (j = 0; j < 3; j++) {
-                girl.name = 'girl' + (3*i + 1);
+                girl.name = 'girl' + (3*i + j + 1);
                 girl.rating = Math.floor(Math.random() * (75 - 30)) + 30;
                 girl.maintenanceBudget = Math.floor(Math.random() * (5000 - 2500)) + 2500;
                 girl.intelligence = Math.floor(Math.random() * (70 - 10)) + 10;
@@ -120,6 +139,7 @@ module.exports = {
                 } else if (j == 1) {
                     girls[3*i + j] = new GirlByRich(girl.name, girl.rating, girl.maintenanceBudget,
                         girl.intelligence, girl.isCommited);
+                    console.log('hello');
                 } else if (j == 2) {
                     girls[3*i + j] = new GirlByIntelligent(girl.name, girl.rating, girl.maintenanceBudget,
                         girl.intelligence, girl.isCommited);
@@ -258,5 +278,33 @@ module.exports = {
                 Math.abs(couple.boyDesc.intelligence - couple.girlDesc.intelligence);
 
         }
+    },
+
+    /**
+     * Perform break up and reallocate couples
+     * 
+     * @param {any} couples 
+     * @param {any} boys 
+     * @param {any} girls 
+     * @param {any} k 
+     * @param {any} brokeUp 
+     * @returns 
+     */
+    performBreakUp: function (couples, boys, girls, k, brokeUp) {
+        couples.sort(function (a, b) {
+            return a.happiness - b.happiness;
+        });
+
+        for (i = 0; i < k; i++) {
+            couples[i].boyDesc.isCommited = false;
+            couples[i].girlDesc.isCommited = false;
+            boys[boys.indexOf(couples[i].boyDesc)].isCommited = false;
+            girls[girls.indexOf(couples[i].girlDesc)].isCommited = false;
+            brokeUp.push(couples[i]);
+            couples.splice(i, 1);
+        }
+        module.exports.allocateCouples(girls, boys, couples, brokeUp);
+
+        return;
     }
 }
