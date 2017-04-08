@@ -4,43 +4,60 @@ var Gift = require('./classes.js').Gift;
 
 module.exports = {
 
+    /**
+     * 
+     * 
+     * @param {any} girls 
+     * @param {any} boys 
+     * @returns 
+     */
     allocateCouples : function(girls, boys) {
-        /*
-            function to allocate couples
-            param   girls   object
-            param   boys    object
-            return couples  object
-        */
         var gi = 0;
         var bi = 0;
+        var countGi = 0;
         var commits = 0;
         const girlCommitTypes = ["choosy", "normal", "desperate"];
         const boyCommitTypes = ["miser", "generous", "geeks"];
         var couples = [];
+
         while (commits < girls.length) {
             var girl = girls[gi];
             var boy = boys[bi];
            // console.log(boy);
             //console.log(girl);
             var couple = {};
-            if(boy.isCommited == false && girl.isCommited == false && (boy.budget >= girl.maintainenceBudget) 
+            console.log(boy.budget +' '+ girl.maintenanceBudget + ' ' + girl.rating +' '+ boy.minRating);
+
+            if(boy.isCommited == false && girl.isCommited == false && (boy.budget >= girl.maintenanceBudget) 
                 && (girl.rating >= boy.minRating)) {
                 if( girl.criteriaToDate == "intelligent") {
                     if(boy.intelligence < 8) {
                         bi += 1;
                         bi = bi%(boys.length);
+                        if (countGi >= boys.length) {
+                            gi += 1;
+                            countGi = 0;
+                        }                         
                         continue;
                     }
                 } else if (girl.criteriaToDate == "attractive") {
                     if (boy.attractiveness < 75 ) {
                         bi += 1;
                         bi = bi%(boys.length);
+                         if (countGi >= boys.length) {
+                            gi += 1;
+                            countGi = 0;
+                        }  
                         continue;
                     }
                 } else if (girl.criteriaToDate == "rich") {
                     if (boy.budget < 7500 ) {
                         bi += 1;
                         bi = bi%(boys.length);
+                         if (countGi >= boys.length) {
+                            gi += 1;
+                            countGi = 0;
+                        }  
                         continue;
                     }
                 }
@@ -57,7 +74,6 @@ module.exports = {
                 bi += 1;
                 bi = bi%(boys.length);
                 gi = gi%(girls.length);
-                //console.log(couple);
                 couples.push(couple);
             } else {
                 //gi += 1;
@@ -65,22 +81,38 @@ module.exports = {
                 bi = bi%(boys.length);
                 //gi = gi%(girls.length);
             }
+            if (countGi >= boys.length) {
+                gi += 1;
+                countGi = 0;
+            }  
                 
         }
 
         return couples;
     },
 
+    /**
+     * 
+     * 
+     * @param {any} girlInput 
+     * @returns 
+     */
     initiateGirls : function(girlInput) {
         //initiate the girls object from data
         var girls = [];
         for(i = 0; i < girlInput.length; i++) {
-            girls[i] = new Girl(girlInput[i].name, girlInput[i].rating, girlInput[i].maintainenceBudget, 
+            girls[i] = new Girl(girlInput[i].name, girlInput[i].rating, girlInput[i].maintenanceBudget, 
                                     girlInput[i].intelligence, girlInput[i].criteriaToDate, girlInput[i].isCommited);
         }
         return girls;
     },
 
+    /**
+     * 
+     * 
+     * @param {any} boyInput 
+     * @returns 
+     */
     initiateBoys : function(boyInput) {
         //initiate boys object from data
         var boys = [];
@@ -91,6 +123,12 @@ module.exports = {
         return boys;
     },
 
+    /**
+     * 
+     * 
+     * @param {any} giftInput 
+     * @returns 
+     */
     initiateGifts : function(giftInput) {
 
         var gifts = [];
@@ -105,6 +143,14 @@ module.exports = {
         return gifts;
     },
 
+    /**
+     * 
+     * 
+     * @param {any} couples 
+     * @param {any} girls 
+     * @param {any} boys 
+     * @param {any} gifts 
+     */
     distribGiftsAndCalcHappiness : function(couples, girls, boys, gifts) {
         //console.log(gifts);
         for(i = 0; i < couples.length; i++) {
@@ -117,11 +163,11 @@ module.exports = {
             var giftValue = 0;
             var max = 0;
             if (couple.boyDesc.commitType == "miser"){
-                max = couple.girlDesc.maintainenceBudget;
+                max = couple.girlDesc.maintenanceBudget;
             } else if (couple.boyDesc.commitType == "generous") {
                 max = couple.boyDesc.budget;
             } else if (couple.boyDesc.commitType == "geeks") {
-                max = couple.girlDesc.maintainenceBudget;
+                max = couple.girlDesc.maintenanceBudget;
             }
 
             var gi = 0;
@@ -135,13 +181,12 @@ module.exports = {
             }
 
             if(couple.girlDesc.commitType == "choosy") {
-                // TODO: minor correction needed, need to add the value of luxury gifts. 
-                girlHappines =  Math.log(moneySpent/couple.girlDesc.maintainenceBudget);
+                girlHappines =  Math.log(moneySpent/couple.girlDesc.maintenanceBudget);
             } else if (couple.girlDesc.commitType == "normal") {
-                girlHappines = moneySpent/couple.girlDesc.maintainenceBudget;
+                girlHappines = moneySpent/couple.girlDesc.maintenanceBudget;
                 girlHappines += giftValue;
             } else if (couple.girlDesc.commitType == "desperate") {
-                girlHappines = moneySpent/couple.girlDesc.maintainenceBudget;
+                girlHappines = moneySpent/couple.girlDesc.maintenanceBudget;
             }
 
             if (couple.boyDesc.commitType == "miser"){
@@ -153,13 +198,13 @@ module.exports = {
             }
 
             couple.happiness = boyHappines + girlHappines;
-            couple.boyDesc.happines = boyHappines;
-            couple.girlDesc.happines = girlHappines;
+            couple.boyDesc.happiness = boyHappines;
+            couple.girlDesc.happiness = girlHappines;
             couple.moneySpent = moneySpent;
             couple.giftValue = giftValue;
             couple.giftList = giftList;
 
-            couple.compatibility = (couple.boyDesc.budget - couple.girlDesc.maintainenceBudget)
+            couple.compatibility = (couple.boyDesc.budget - couple.girlDesc.maintenanceBudget)
                                 + Math.abs(couple.boyDesc.attractiveness - couple.girlDesc.rating)
                                 + Math.abs(couple.boyDesc.intelligence - couple.girlDesc.intelligence);
 

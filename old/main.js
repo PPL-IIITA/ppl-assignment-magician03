@@ -10,7 +10,6 @@ var log_file = fs.createWriteStream(__dirname + '/output.log', {flags : 'w'});
 var log_stdout = process.stdout;
 
 console.log = function(d) { 
-    
   log_file.write(util.format(d) + '\n');
   //log_stdout.write(util.format(d) + '\n');
 };
@@ -20,6 +19,7 @@ console.log = function(d) {
 var girls = lib.initiateGirls(girlInput);
 var boys = lib.initiateBoys(boyInput);
 var gifts = lib.initiateGifts(giftInput);
+console.log("Done");
 
 var couples = lib.allocateCouples(girls, boys);
 

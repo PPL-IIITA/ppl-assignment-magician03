@@ -3,7 +3,7 @@
         {
             "name" : "girl1",
             "rating" : 65,
-            "maintainenceBudget" : 5000,
+            "maintenanceBudget" : 5000,
             "intelligence" : 2,
             "criteriaToDate" : "rich",
             "isCommited" : false
@@ -11,7 +11,7 @@
         {
             "name" : "girl2",
             "rating" : 65,
-            "maintainenceBudget" : 6500,
+            "maintenanceBudget" : 6500,
             "intelligence" : 1,
             "criteriaToDate" : "attractive",
             "isCommited" : false
@@ -19,7 +19,7 @@
         {
             "name" : "girl3",
             "rating" : 80,
-            "maintainenceBudget" : 7000,
+            "maintenanceBudget" : 7000,
             "intelligence" : 9,
             "criteriaToDate" : "intelligent",
             "isCommited" : false

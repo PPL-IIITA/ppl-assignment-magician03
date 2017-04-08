@@ -1,9 +1,9 @@
 module.exports = {
     Girl : class Girl {
-            constructor(name, rating, maintainenceBudget, intelligence, criteriaToDate, isCommited) {
+            constructor(name, rating, maintenanceBudget, intelligence, criteriaToDate, isCommited) {
                 this.name = name;
                 this.rating = rating;
-                this.maintainenceBudget = maintainenceBudget;
+                this.maintenanceBudget = maintenanceBudget;
                 this.intelligence = intelligence;
                 this.criteriaToDate = criteriaToDate;
                 this.isCommited = isCommited;

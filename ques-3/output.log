@@ -1,0 +1,408 @@
+---couples allocated-----
+
+[ { commitId: 1,
+    boyDesc: 
+     Boy {
+       name: 'boy1',
+       attractiveness: 51,
+       intelligence: 44,
+       budget: 9479,
+       minRating: 19,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl1',
+       rating: 59,
+       maintenanceBudget: 2794,
+       intelligence: 47,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 2,
+    boyDesc: 
+     Boy {
+       name: 'boy2',
+       attractiveness: 62,
+       intelligence: 71,
+       budget: 7014,
+       minRating: 21,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl2',
+       rating: 51,
+       maintenanceBudget: 4767,
+       intelligence: 64,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 3,
+    boyDesc: 
+     Boy {
+       name: 'boy3',
+       attractiveness: 60,
+       intelligence: 43,
+       budget: 8708,
+       minRating: 20,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl3',
+       rating: 38,
+       maintenanceBudget: 4982,
+       intelligence: 51,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 4,
+    boyDesc: 
+     Boy {
+       name: 'boy5',
+       attractiveness: 60,
+       intelligence: 59,
+       budget: 4468,
+       minRating: 21,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl4',
+       rating: 35,
+       maintenanceBudget: 4001,
+       intelligence: 51,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 5,
+    boyDesc: 
+     Boy {
+       name: 'boy8',
+       attractiveness: 95,
+       intelligence: 71,
+       budget: 8605,
+       minRating: 20,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl5',
+       rating: 42,
+       maintenanceBudget: 4797,
+       intelligence: 49,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 6,
+    boyDesc: 
+     Boy {
+       name: 'boy10',
+       attractiveness: 51,
+       intelligence: 69,
+       budget: 4239,
+       minRating: 30,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl6',
+       rating: 50,
+       maintenanceBudget: 2538,
+       intelligence: 43,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 7,
+    boyDesc: 
+     Boy {
+       name: 'boy12',
+       attractiveness: 71,
+       intelligence: 46,
+       budget: 4988,
+       minRating: 34,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl7',
+       rating: 45,
+       maintenanceBudget: 4975,
+       intelligence: 22,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 8,
+    boyDesc: 
+     Boy {
+       name: 'boy15',
+       attractiveness: 83,
+       intelligence: 76,
+       budget: 8336,
+       minRating: 16,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl8',
+       rating: 54,
+       maintenanceBudget: 3769,
+       intelligence: 29,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 9,
+    boyDesc: 
+     Boy {
+       name: 'boy17',
+       attractiveness: 53,
+       intelligence: 90,
+       budget: 9361,
+       minRating: 14,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl9',
+       rating: 59,
+       maintenanceBudget: 4420,
+       intelligence: 47,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 10,
+    boyDesc: 
+     Boy {
+       name: 'boy18',
+       attractiveness: 82,
+       intelligence: 69,
+       budget: 4954,
+       minRating: 18,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl10',
+       rating: 32,
+       maintenanceBudget: 3165,
+       intelligence: 24,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 11,
+    boyDesc: 
+     Boy {
+       name: 'boy19',
+       attractiveness: 84,
+       intelligence: 42,
+       budget: 8892,
+       minRating: 33,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl10',
+       rating: 66,
+       maintenanceBudget: 4600,
+       intelligence: 12,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 12,
+    boyDesc: 
+     Boy {
+       name: 'boy20',
+       attractiveness: 65,
+       intelligence: 78,
+       budget: 6523,
+       minRating: 18,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl10',
+       rating: 34,
+       maintenanceBudget: 2812,
+       intelligence: 37,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'normal' } } ]
+
+-----printing gifts exchanged and other data-------
+
+{ commitId: 1,
+  boy: 'boy1',
+  girl: 'girl1',
+  happiness: 13077.143879742305,
+  compatibility: 6696,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' } ] }
+{ commitId: 2,
+  boy: 'boy2',
+  girl: 'girl2',
+  happiness: 25209.240612544578,
+  compatibility: 2265,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' },
+     EssentialGift { id: '12', price: 793, value: 748, type: 'Essential' },
+     UtilityGift { id: '7', price: 830, value: 897, type: 'Utility' },
+     UtilityGift { id: '20', price: 872, value: 1197, type: 'Utility' },
+     UtilityGift { id: '3', price: 956, value: 1019, type: 'Utility' },
+     UtilityGift { id: '9', price: 1077, value: 1949, type: 'Utility' } ] }
+{ commitId: 3,
+  boy: 'boy3',
+  girl: 'girl3',
+  happiness: 3017.133054562781,
+  compatibility: 3756,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' },
+     EssentialGift { id: '12', price: 793, value: 748, type: 'Essential' },
+     UtilityGift { id: '7', price: 830, value: 897, type: 'Utility' },
+     UtilityGift { id: '20', price: 872, value: 1197, type: 'Utility' } ] }
+{ commitId: 4,
+  boy: 'boy5',
+  girl: 'girl4',
+  happiness: -350.8139778922169,
+  compatibility: 500,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' },
+     EssentialGift { id: '12', price: 793, value: 748, type: 'Essential' },
+     UtilityGift { id: '7', price: 830, value: 897, type: 'Utility' } ] }
+{ commitId: 5,
+  boy: 'boy8',
+  girl: 'girl5',
+  happiness: 28717.68105065666,
+  compatibility: 3883,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' },
+     EssentialGift { id: '12', price: 793, value: 748, type: 'Essential' },
+     UtilityGift { id: '7', price: 830, value: 897, type: 'Utility' },
+     UtilityGift { id: '20', price: 872, value: 1197, type: 'Utility' },
+     UtilityGift { id: '3', price: 956, value: 1019, type: 'Utility' },
+     UtilityGift { id: '9', price: 1077, value: 1949, type: 'Utility' },
+     EssentialGift { id: '8', price: 1105, value: 1754, type: 'Essential' } ] }
+{ commitId: 6,
+  boy: 'boy10',
+  girl: 'girl6',
+  happiness: 44.25925925925926,
+  compatibility: 1728,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' } ] }
+{ commitId: 7,
+  boy: 'boy12',
+  girl: 'girl7',
+  happiness: 9658.14391959799,
+  compatibility: 63,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' },
+     EssentialGift { id: '12', price: 793, value: 748, type: 'Essential' },
+     UtilityGift { id: '7', price: 830, value: 897, type: 'Utility' },
+     UtilityGift { id: '20', price: 872, value: 1197, type: 'Utility' } ] }
+{ commitId: 8,
+  boy: 'boy15',
+  girl: 'girl8',
+  happiness: 4348.0583709206685,
+  compatibility: 4643,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' },
+     EssentialGift { id: '12', price: 793, value: 748, type: 'Essential' } ] }
+{ commitId: 9,
+  boy: 'boy17',
+  girl: 'girl9',
+  happiness: 4542.086426741568,
+  compatibility: 4990,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' },
+     EssentialGift { id: '12', price: 793, value: 748, type: 'Essential' },
+     UtilityGift { id: '7', price: 830, value: 897, type: 'Utility' } ] }
+{ commitId: 10,
+  boy: 'boy18',
+  girl: 'girl10',
+  happiness: 8552.009794628753,
+  compatibility: 1884,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' } ] }
+{ commitId: 11,
+  boy: 'boy19',
+  girl: 'girl10',
+  happiness: 31316.35956521739,
+  compatibility: 4340,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' },
+     EssentialGift { id: '12', price: 793, value: 748, type: 'Essential' },
+     UtilityGift { id: '7', price: 830, value: 897, type: 'Utility' },
+     UtilityGift { id: '20', price: 872, value: 1197, type: 'Utility' },
+     UtilityGift { id: '3', price: 956, value: 1019, type: 'Utility' },
+     UtilityGift { id: '9', price: 1077, value: 1949, type: 'Utility' },
+     EssentialGift { id: '8', price: 1105, value: 1754, type: 'Essential' },
+     UtilityGift { id: '15', price: 1198, value: 1299, type: 'Utility' } ] }
+{ commitId: 12,
+  boy: 'boy20',
+  girl: 'girl10',
+  happiness: 21312.72759601707,
+  compatibility: 3783,
+  giftList: 
+   [ EssentialGift { id: '10', price: 372, value: 423, type: 'Essential' },
+     EssentialGift { id: '19', price: 659, value: 1957, type: 'Essential' },
+     EssentialGift { id: '2', price: 682, value: 1258, type: 'Essential' },
+     UtilityGift { id: '11', price: 726, value: 1916, type: 'Utility' },
+     EssentialGift { id: '17', price: 757, value: 1239, type: 'Essential' },
+     EssentialGift { id: '12', price: 793, value: 748, type: 'Essential' },
+     UtilityGift { id: '7', price: 830, value: 897, type: 'Utility' },
+     UtilityGift { id: '20', price: 872, value: 1197, type: 'Utility' },
+     UtilityGift { id: '3', price: 956, value: 1019, type: 'Utility' } ] }
+
+----sorted order acc to happiness-----
+
+boy19  <=>  girl10
+boy8  <=>  girl5
+
+----sorted order acc to compatibility-----
+
+boy1  <=>  girl1
+boy17  <=>  girl9
