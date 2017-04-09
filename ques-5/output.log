@@ -1,0 +1,589 @@
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+
+------couples formed------
+
+[ { commitId: 1,
+    boyDesc: 
+     Boy {
+       name: 'boy18',
+       attractiveness: 99,
+       intelligence: 45,
+       budget: 7315,
+       minRating: 11,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl7',
+       rating: 70,
+       maintenanceBudget: 4066,
+       intelligence: 47,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 2,
+    boyDesc: 
+     Boy {
+       name: 'boy43',
+       attractiveness: 98,
+       intelligence: 76,
+       budget: 6920,
+       minRating: 12,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl27',
+       rating: 67,
+       maintenanceBudget: 4956,
+       intelligence: 36,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 3,
+    boyDesc: 
+     Boy {
+       name: 'boy4',
+       attractiveness: 96,
+       intelligence: 56,
+       budget: 7045,
+       minRating: 31,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl16',
+       rating: 63,
+       maintenanceBudget: 3673,
+       intelligence: 58,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 4,
+    boyDesc: 
+     Boy {
+       name: 'boy6',
+       attractiveness: 95,
+       intelligence: 43,
+       budget: 7519,
+       minRating: 34,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl4',
+       rating: 63,
+       maintenanceBudget: 2935,
+       intelligence: 27,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 5,
+    boyDesc: 
+     Boy {
+       name: 'boy42',
+       attractiveness: 94,
+       intelligence: 46,
+       budget: 9007,
+       minRating: 26,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl1',
+       rating: 62,
+       maintenanceBudget: 3504,
+       intelligence: 53,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 6,
+    boyDesc: 
+     Boy {
+       name: 'boy12',
+       attractiveness: 92,
+       intelligence: 60,
+       budget: 6753,
+       minRating: 14,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl23',
+       rating: 61,
+       maintenanceBudget: 3472,
+       intelligence: 18,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 7,
+    boyDesc: 
+     Boy {
+       name: 'boy39',
+       attractiveness: 92,
+       intelligence: 79,
+       budget: 8577,
+       minRating: 26,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl6',
+       rating: 61,
+       maintenanceBudget: 3818,
+       intelligence: 31,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 8,
+    boyDesc: 
+     Boy {
+       name: 'boy31',
+       attractiveness: 91,
+       intelligence: 77,
+       budget: 8541,
+       minRating: 27,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl24',
+       rating: 57,
+       maintenanceBudget: 4687,
+       intelligence: 67,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 9,
+    boyDesc: 
+     Boy {
+       name: 'boy21',
+       attractiveness: 91,
+       intelligence: 75,
+       budget: 6779,
+       minRating: 32,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl26',
+       rating: 53,
+       maintenanceBudget: 2938,
+       intelligence: 37,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 10,
+    boyDesc: 
+     Boy {
+       name: 'boy44',
+       attractiveness: 90,
+       intelligence: 99,
+       budget: 5132,
+       minRating: 30,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl20',
+       rating: 51,
+       maintenanceBudget: 2695,
+       intelligence: 31,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 11,
+    boyDesc: 
+     Boy {
+       name: 'boy35',
+       attractiveness: 90,
+       intelligence: 96,
+       budget: 7619,
+       minRating: 11,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl3',
+       rating: 51,
+       maintenanceBudget: 4191,
+       intelligence: 37,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 12,
+    boyDesc: 
+     Boy {
+       name: 'boy45',
+       attractiveness: 90,
+       intelligence: 68,
+       budget: 5153,
+       minRating: 13,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl8',
+       rating: 50,
+       maintenanceBudget: 3393,
+       intelligence: 40,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 13,
+    boyDesc: 
+     Boy {
+       name: 'boy50',
+       attractiveness: 90,
+       intelligence: 62,
+       budget: 7099,
+       minRating: 29,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl22',
+       rating: 48,
+       maintenanceBudget: 2813,
+       intelligence: 43,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 14,
+    boyDesc: 
+     Boy {
+       name: 'boy16',
+       attractiveness: 89,
+       intelligence: 72,
+       budget: 5859,
+       minRating: 35,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl17',
+       rating: 47,
+       maintenanceBudget: 3148,
+       intelligence: 16,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 15,
+    boyDesc: 
+     Boy {
+       name: 'boy46',
+       attractiveness: 87,
+       intelligence: 87,
+       budget: 7614,
+       minRating: 28,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl11',
+       rating: 46,
+       maintenanceBudget: 4606,
+       intelligence: 16,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 16,
+    boyDesc: 
+     Boy {
+       name: 'boy33',
+       attractiveness: 86,
+       intelligence: 99,
+       budget: 6391,
+       minRating: 28,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl5',
+       rating: 44,
+       maintenanceBudget: 4609,
+       intelligence: 15,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 17,
+    boyDesc: 
+     Boy {
+       name: 'boy26',
+       attractiveness: 83,
+       intelligence: 93,
+       budget: 8638,
+       minRating: 10,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl12',
+       rating: 44,
+       maintenanceBudget: 2758,
+       intelligence: 52,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 18,
+    boyDesc: 
+     Boy {
+       name: 'boy14',
+       attractiveness: 82,
+       intelligence: 99,
+       budget: 6334,
+       minRating: 23,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl28',
+       rating: 44,
+       maintenanceBudget: 3016,
+       intelligence: 14,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 19,
+    boyDesc: 
+     Boy {
+       name: 'boy10',
+       attractiveness: 82,
+       intelligence: 74,
+       budget: 7356,
+       minRating: 37,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl2',
+       rating: 43,
+       maintenanceBudget: 3132,
+       intelligence: 51,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 20,
+    boyDesc: 
+     Boy {
+       name: 'boy38',
+       attractiveness: 81,
+       intelligence: 60,
+       budget: 5123,
+       minRating: 23,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl21',
+       rating: 43,
+       maintenanceBudget: 3604,
+       intelligence: 51,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 21,
+    boyDesc: 
+     Boy {
+       name: 'boy47',
+       attractiveness: 80,
+       intelligence: 58,
+       budget: 9287,
+       minRating: 31,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl9',
+       rating: 43,
+       maintenanceBudget: 3527,
+       intelligence: 40,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 22,
+    boyDesc: 
+     Boy {
+       name: 'boy8',
+       attractiveness: 79,
+       intelligence: 54,
+       budget: 7339,
+       minRating: 31,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl15',
+       rating: 41,
+       maintenanceBudget: 3102,
+       intelligence: 41,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 23,
+    boyDesc: 
+     Boy {
+       name: 'boy28',
+       attractiveness: 79,
+       intelligence: 61,
+       budget: 7581,
+       minRating: 38,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl25',
+       rating: 39,
+       maintenanceBudget: 4260,
+       intelligence: 16,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 24,
+    boyDesc: 
+     Boy {
+       name: 'boy24',
+       attractiveness: 78,
+       intelligence: 91,
+       budget: 8357,
+       minRating: 30,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl10',
+       rating: 38,
+       maintenanceBudget: 3815,
+       intelligence: 62,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 25,
+    boyDesc: 
+     Boy {
+       name: 'boy9',
+       attractiveness: 75,
+       intelligence: 73,
+       budget: 9460,
+       minRating: 24,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl18',
+       rating: 37,
+       maintenanceBudget: 3420,
+       intelligence: 24,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 26,
+    boyDesc: 
+     Boy {
+       name: 'boy1',
+       attractiveness: 75,
+       intelligence: 86,
+       budget: 6642,
+       minRating: 16,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByIntelligent {
+       name: 'girl30',
+       rating: 35,
+       maintenanceBudget: 4636,
+       intelligence: 22,
+       criteriaToDate: 'intelligent',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 27,
+    boyDesc: 
+     Boy {
+       name: 'boy41',
+       attractiveness: 70,
+       intelligence: 47,
+       budget: 5028,
+       minRating: 33,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl14',
+       rating: 33,
+       maintenanceBudget: 3066,
+       intelligence: 58,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'normal' } },
+  { commitId: 28,
+    boyDesc: 
+     Boy {
+       name: 'boy7',
+       attractiveness: 70,
+       intelligence: 65,
+       budget: 8442,
+       minRating: 33,
+       isCommited: true,
+       commitType: 'geeks' },
+    girlDesc: 
+     GirlByRich {
+       name: 'girl29',
+       rating: 33,
+       maintenanceBudget: 3910,
+       intelligence: 16,
+       criteriaToDate: 'rich',
+       isCommited: true,
+       commitType: 'desperate' } },
+  { commitId: 29,
+    boyDesc: 
+     Boy {
+       name: 'boy5',
+       attractiveness: 68,
+       intelligence: 55,
+       budget: 4368,
+       minRating: 10,
+       isCommited: true,
+       commitType: 'miser' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl13',
+       rating: 32,
+       maintenanceBudget: 4033,
+       intelligence: 55,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'choosy' } },
+  { commitId: 30,
+    boyDesc: 
+     Boy {
+       name: 'boy37',
+       attractiveness: 66,
+       intelligence: 86,
+       budget: 4664,
+       minRating: 14,
+       isCommited: true,
+       commitType: 'generous' },
+    girlDesc: 
+     GirlByAttractive {
+       name: 'girl19',
+       rating: 31,
+       maintenanceBudget: 3468,
+       intelligence: 33,
+       criteriaToDate: 'attractive',
+       isCommited: true,
+       commitType: 'desperate' } } ]
+
+----sorted order acc to happiness-----
+
+boy26  <=>  girl12
+boy42  <=>  girl1
+boy43  <=>  girl27
