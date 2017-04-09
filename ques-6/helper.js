@@ -13,10 +13,10 @@ module.exports = {
     /**
      * Allocate couples
      * 
-     * @param {any} girls 
-     * @param {any} boys 
-     * @param {any} couples 
-     * @param {any} brokeUp 
+     * @param {Array} girls 
+     * @param {Array} boys 
+     * @param {Array} couples 
+     * @param {Array} brokeUp 
      * @returns 
      */
     allocateCouples: function (girls, boys, couples, brokeUp) {
@@ -118,7 +118,7 @@ module.exports = {
     /**
      * Initiates three types of girls from inheritance classes
      * 
-     * @returns {Object} girls 
+     * @returns {Array} girls 
      */
     initiateGirls: function () {
         //initiate the girls object
@@ -153,7 +153,7 @@ module.exports = {
     /**
      * Initiates boys.
      * 
-     * @returns {Object} Boys
+     * @returns {Array} Boys
      */
     initiateBoys: function () {
         //initiate boys object
@@ -177,7 +177,7 @@ module.exports = {
     /**
      * Initiates three types of Gifts
      * 
-     * @returns {Object} Gifts
+     * @returns {Array} Gifts
      */
     initiateGifts: function () {
         var gift = {};
@@ -216,10 +216,10 @@ module.exports = {
     /**
      * Distribute gifts and calculate happiness among couples
      * 
-     * @param {Object} couples 
-     * @param {Object} girls 
-     * @param {Object} boys 
-     * @param {Object} gifts 
+     * @param {Array} couples 
+     * @param {Array} girls 
+     * @param {Array} boys 
+     * @param {Array} gifts 
      */
     distribGiftsAndCalcHappiness: function (couples, girls, boys, gifts) {
         for (var i = 0; i < couples.length; i++) {
@@ -282,11 +282,11 @@ module.exports = {
     /**
      * Perform break up of k least happy couples and reallocate couples
      * 
-     * @param {any} couples 
-     * @param {any} boys 
-     * @param {any} girls 
-     * @param {any} k 
-     * @param {any} brokeUp 
+     * @param {Array} couples 
+     * @param {Array} boys 
+     * @param {Array} girls 
+     * @param {Integer} k 
+     * @param {Array} brokeUp 
      * @returns 
      */
     performBreakUp: function (couples, boys, girls, k, brokeUp) {
@@ -310,10 +310,10 @@ module.exports = {
     /**
      * Allocate couples based of alternate preference.
      * 
-     * @param {any} girls 
-     * @param {any} boys 
-     * @param {any} couples 
-     * @param {any} brokeUp 
+     * @param {Array} girls 
+     * @param {Array} boys 
+     * @param {Array} couples 
+     * @param {Array} brokeUp 
      */
     alternatlyAllocateCouples: function (girls, boys, couples, brokeUp) {
         var gi = 0; // index of girls array

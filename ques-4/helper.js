@@ -13,10 +13,10 @@ module.exports = {
     /**
      * Allocate couples
      * 
-     * @param {any} girls 
-     * @param {any} boys 
-     * @param {any} couples 
-     * @param {any} brokeUp 
+     * @param {Array} girls 
+     * @param {Array} boys 
+     * @param {Array} couples 
+     * @param {Array} brokeUp 
      * @returns 
      */
     allocateCouples: function (girls, boys, couples, brokeUp) {
@@ -86,7 +86,7 @@ module.exports = {
 
                 if (breakUpFlag == 1) continue;
 
-                console.log(girls[gi].name + ' ' + boys[bi].name);
+                //console.log(girls[gi].name + ' ' + boys[bi].name);
                 boy.isCommited = true;
                 girl.isCommited = true;
                 girl.commitType = girlCommitTypes[Math.floor(Math.random() * 3)];
@@ -118,30 +118,29 @@ module.exports = {
     /**
      * Initiates three types of girls from inheritance classes
      * 
-     * @returns {Object} girls 
+     * @returns {Array} girls 
      */
     initiateGirls: function () {
-        //initiate the girls object
+        //initiate the girls array
         var girl = {};
         var girls = [];
 
         for (var i = 0; i < 10; i++) {
             for (j = 0; j < 3; j++) {
-                girl.name = 'girl' + (3*i + j + 1);
+                girl.name = 'girl' + (3 * i + j + 1);
                 girl.rating = Math.floor(Math.random() * (75 - 30)) + 30;
                 girl.maintenanceBudget = Math.floor(Math.random() * (5000 - 2500)) + 2500;
                 girl.intelligence = Math.floor(Math.random() * (70 - 10)) + 10;
                 girl.isCommited = false;
 
                 if (j === 0) {
-                    girls[3*i + j] = new GirlByAttractive(girl.name, girl.rating, girl.maintenanceBudget,
+                    girls[3 * i + j] = new GirlByAttractive(girl.name, girl.rating, girl.maintenanceBudget,
                         girl.intelligence, girl.isCommited);
                 } else if (j == 1) {
-                    girls[3*i + j] = new GirlByRich(girl.name, girl.rating, girl.maintenanceBudget,
+                    girls[3 * i + j] = new GirlByRich(girl.name, girl.rating, girl.maintenanceBudget,
                         girl.intelligence, girl.isCommited);
-                    console.log('hello');
                 } else if (j == 2) {
-                    girls[3*i + j] = new GirlByIntelligent(girl.name, girl.rating, girl.maintenanceBudget,
+                    girls[3 * i + j] = new GirlByIntelligent(girl.name, girl.rating, girl.maintenanceBudget,
                         girl.intelligence, girl.isCommited);
                 }
 
@@ -154,10 +153,10 @@ module.exports = {
     /**
      * Initiates boys.
      * 
-     * @returns {Object} Boys
+     * @returns {Array} Boys
      */
     initiateBoys: function () {
-        //initiate boys object
+        //initiate boys array
         var boy = {};
         var boys = [];
 
@@ -178,7 +177,7 @@ module.exports = {
     /**
      * Initiates three types of Gifts
      * 
-     * @returns {Object} Gifts
+     * @returns {Array} Gifts
      */
     initiateGifts: function () {
         var gift = {};
@@ -217,10 +216,10 @@ module.exports = {
     /**
      * Distribute gifts and calculate happiness among couples
      * 
-     * @param {Object} couples 
-     * @param {Object} girls 
-     * @param {Object} boys 
-     * @param {Object} gifts 
+     * @param {Array} couples 
+     * @param {Array} girls 
+     * @param {Array} boys 
+     * @param {Array} gifts 
      */
     distribGiftsAndCalcHappiness: function (couples, girls, boys, gifts) {
         for (var i = 0; i < couples.length; i++) {
@@ -283,11 +282,11 @@ module.exports = {
     /**
      * Perform break up and reallocate couples
      * 
-     * @param {any} couples 
-     * @param {any} boys 
-     * @param {any} girls 
-     * @param {any} k 
-     * @param {any} brokeUp 
+     * @param {Array} couples 
+     * @param {Array} boys 
+     * @param {Array} girls 
+     * @param {Integer} k 
+     * @param {Array} brokeUp 
      * @returns 
      */
     performBreakUp: function (couples, boys, girls, k, brokeUp) {

@@ -6,11 +6,12 @@ module.exports = {
     Girl: class Girl {
         /**
          * Creates an instance of Girl.
-         * @param {any} name 
-         * @param {any} rating 
-         * @param {any} maintainenceBudget 
-         * @param {any} intelligence 
-         * @param {any} isCommited 
+         * 
+         * @param {String} name 
+         * @param {Integer} rating 
+         * @param {Integer} maintainenceBudget 
+         * @param {Integer} intelligence 
+         * @param {Boolean} isCommited 
          */
         constructor(name, rating, maintainenceBudget, intelligence, isCommited) {
             this.name = name;
@@ -24,12 +25,13 @@ module.exports = {
     Boy: class Boy {
         /**
          * Creates an instance of Boy.
-         * @param {any} name 
-         * @param {any} attractiveness 
-         * @param {any} intelligence 
-         * @param {any} budget 
-         * @param {any} minRating 
-         * @param {any} isCommited 
+         * 
+         * @param {String} name 
+         * @param {Integer} attractiveness 
+         * @param {Integer} intelligence 
+         * @param {Integer} budget 
+         * @param {Integer} minRating 
+         * @param {Boolean} isCommited 
          */
         constructor(name, attractiveness, intelligence, budget, minRating, isCommited) {
             this.name = name;
@@ -44,8 +46,10 @@ module.exports = {
     Gift: class Gift {
         /**
          * Creates an instance of Gift.
-         * @param {any} id 
-         * @param {any} price 
+         * 
+         * @param {Integer} id 
+         * @param {Integer} price 
+         * @param {Integer} value 
          */
         constructor(id, price, value) {
             this.id = id;
@@ -56,11 +60,12 @@ module.exports = {
     GirlByAttractive: class GirlByAttractive extends Girl {
         /**
          * Creates an instance of GirlByAttractive.
-         * @param {any} name 
-         * @param {any} rating 
-         * @param {any} maintainenceBudget 
-         * @param {any} intelligence 
-         * @param {any} isCommited 
+         * 
+         * @param {String} name 
+         * @param {Integer} rating 
+         * @param {Integer} maintainenceBudget 
+         * @param {Integer} intelligence 
+         * @param {Boolean} isCommited 
          */
         constructor(name, rating, maintainenceBudget, intelligence, isCommited) {
             super(name, rating, maintainenceBudget, intelligence, 'attractive', isCommited);
@@ -70,63 +75,70 @@ module.exports = {
     GirlByRich: class GirlByRich extends Girl {
         /**
          * Creates an instance of GirlByRich.
-         * @param {any} name 
-         * @param {any} rating 
-         * @param {any} maintainenceBudget 
-         * @param {any} intelligence 
-         * @param {any} isCommited 
+         * 
+         * @param {String} name 
+         * @param {Integer} rating 
+         * @param {Integer} maintainenceBudget 
+         * @param {Integer} intelligence 
+         * @param {Boolean} isCommited 
          */
         constructor(name, rating, maintainenceBudget, intelligence, isCommited) {
             super(name, rating, maintainenceBudget, intelligence, 'rich', isCommited);
+            this.criteriaToDate = 'rich';
         }
     },
     GirlByIntelligent: class GirlByIntelligent extends Girl {
         /**
          * Creates an instance of GirlByIntelligent.
-         * @param {any} name 
-         * @param {any} rating 
-         * @param {any} maintainenceBudget 
-         * @param {any} intelligence 
-         * @param {any} isCommited 
+         * 
+         * @param {String} name 
+         * @param {Integer} rating 
+         * @param {Integer} maintainenceBudget 
+         * @param {Integer} intelligence 
+         * @param {Boolean} isCommited 
          */
         constructor(name, rating, maintainenceBudget, intelligence, isCommited) {
             super(name, rating, maintainenceBudget, intelligence, 'intelligent', isCommited);
+            this.criteriaToDate = 'intelligent';
         }
     },
     LuxuryGift: class LuxuryGift extends Gift {
         /**
          * Creates an instance of LuxuryGift.
-         * @param {any} id 
-         * @param {any} price 
-         * @param {any} value 
+         * 
+         * @param {Integer} id 
+         * @param {Integer} price 
+         * @param {Integer} value 
          */
         constructor(id, price, value) {
-            super(id, price,value, 'Luxury');
+            super(id, price, value, 'Luxury');
+            this.type = 'Luxury';
         }
     },
     EssentialGift: class EssentialGift extends Gift {
         /**
          * Creates an instance of EssentialGift.
-         * @param {any} id 
-         * @param {any} price 
-         * @param {any} value 
+         * 
+         * @param {Integer} id 
+         * @param {Integer} price 
+         * @param {Integer} value 
          */
         constructor(id, price, value) {
-            super(id, price,value, 'Essential');
+            super(id, price, value, 'Essential');
+            this.type = 'Essential';
         }
     },
     UtilityGift: class UtilityGift extends Gift {
         /**
          * Creates an instance of UtilityGift.
-         * @param {any} id 
-         * @param {any} price 
-         * @param {any} value 
+         * 
+         * @param {Integer} id 
+         * @param {Integer} price 
+         * @param {Integer} value 
          */
         constructor(id, price, value) {
-            super(id, price,value, 'Utility');
+            super(id, price, value, 'Utility');
+            this.type = 'Utility';
         }
-    },
-
-
-
+    }
 }

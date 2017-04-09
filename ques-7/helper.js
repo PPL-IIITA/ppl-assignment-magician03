@@ -13,16 +13,16 @@ module.exports = {
     /**
      * Allocate couples
      * 
-     * @param {any} girls 
-     * @param {any} boys 
-     * @param {any} couples 
-     * @param {any} brokeUp 
+     * @param {Array} girls 
+     * @param {Array} boys 
+     * @param {Array} couples 
+     * @param {Array} brokeUp 
      * @returns 
      */
     allocateCouples: function (girls, boys, couples, brokeUp) {
-        var gi = 0;
-        var bi = 0;
-        var countGi = 0;
+        var gi = 0; // index of girls array
+        var bi = 0; // index of boys array
+        var countGi = 0; // no of boys, girl has checked
 
         var commits = couples.length;
         const girlCommitTypes = ["choosy", "normal", "desperate"];
@@ -118,7 +118,7 @@ module.exports = {
     /**
      * Initiates three types of girls from inheritance classes
      * 
-     * @returns {Object} girls 
+     * @returns {Array} girls 
      */
     initiateGirls: function () {
         //initiate the girls object
@@ -153,7 +153,7 @@ module.exports = {
     /**
      * Initiates boys.
      * 
-     * @returns {Object} Boys
+     * @returns {Array} Boys
      */
     initiateBoys: function () {
         //initiate boys object
@@ -177,7 +177,7 @@ module.exports = {
     /**
      * Initiates three types of Gifts
      * 
-     * @returns {Object} Gifts
+     * @returns {Array} Gifts
      */
     initiateGifts: function () {
         var gift = {};
@@ -216,10 +216,10 @@ module.exports = {
     /**
      * Distribute gifts and calculate happiness among couples
      * 
-     * @param {Object} couples 
-     * @param {Object} girls 
-     * @param {Object} boys 
-     * @param {Object} gifts 
+     * @param {Array} couples 
+     * @param {Array} girls 
+     * @param {Array} boys 
+     * @param {Array} gifts 
      */
     distribGiftsAndCalcHappiness: function (couples, girls, boys, gifts) {
         for (var i = 0; i < couples.length; i++) {
@@ -282,11 +282,11 @@ module.exports = {
     /**
      * Perform break up of k least happy couples and reallocate couples
      * 
-     * @param {any} couples 
-     * @param {any} boys 
-     * @param {any} girls 
-     * @param {any} k 
-     * @param {any} brokeUp 
+     * @param {Array} couples 
+     * @param {Array} boys 
+     * @param {Array} girls 
+     * @param {Integer} k 
+     * @param {Array} brokeUp 
      * @returns 
      */
     performBreakUp: function (couples, boys, girls, k, brokeUp) {
@@ -310,10 +310,10 @@ module.exports = {
     /**
      * Allocate couples based of alternate preference.
      * 
-     * @param {any} girls 
-     * @param {any} boys 
-     * @param {any} couples 
-     * @param {any} brokeUp 
+     * @param {Array} girls 
+     * @param {Array} boys 
+     * @param {Array} couples 
+     * @param {Array} brokeUp 
      */
     alternatlyAllocateCouples: function (girls, boys, couples, brokeUp) {
         var gi = 0; // index of girls array
@@ -440,12 +440,12 @@ module.exports = {
     /**
      * Generate random boys in feasible range
      * 
-     * @param {any} randomBoys 
+     * @param {Array} randomBoys 
      * @returns 
      */
     generateRandomBoys: function (randomBoys) {
         var max = Math.floor(Math.random() * (30 - 10)) + 10;
-        for(var i = 1; i < max; i++) {
+        for (var i = 1; i < max; i++) {
             boy = 'boy' + (Math.floor(Math.random() * (49 - 0)) + 0);
             if (randomBoys.indexOf(boy) == -1) {
                 randomBoys.push(boy);
@@ -453,30 +453,30 @@ module.exports = {
 
         }
 
-        return ;
+        return;
     },
 
     /**
-     * 
+     * prints the girl friends of randomly generated boys.
      * 
      * @param {Array} randomBoys 
      * @param {Array} couples 
      */
     printGirlFriends: function (randomBoys, couples) {
-        
+
         var simpleCouples = {};
-        for(var i = 0; i < couples.length; i++ ) {
+        for (var i = 0; i < couples.length; i++) {
             simpleCouples[couples[i].boyDesc.name] = couples[i].girlDesc.name;
         }
 
-        for(var i = 0; i < randomBoys.length; i++) {
-            if(simpleCouples[randomBoys[i]]) {
+        for (var i = 0; i < randomBoys.length; i++) {
+            if (simpleCouples[randomBoys[i]]) {
                 console.log(randomBoys[i] + ' is boyfriend of ' + simpleCouples[randomBoys[i]]);
             } else {
-                console.log(randomBoys[i] + ' is still single please pray for him');
+                console.log(randomBoys[i] + ' is still single. Please pray for him');
             }
         }
 
-        return ;
+        return;
     }
 }
