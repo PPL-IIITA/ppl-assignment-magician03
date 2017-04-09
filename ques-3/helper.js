@@ -106,7 +106,7 @@ module.exports = {
         var girl = {};
         var girls = [];
 
-        for (i = 0; i < 10; i++) {
+        for (var i = 0; i < 10; i++) {
             for (j = 0; j < 3; j++) {
                 girl.name = 'girl' + (3*i + 1);
                 girl.rating = Math.floor(Math.random() * (75 - 30)) + 30;
@@ -141,7 +141,7 @@ module.exports = {
         var boy = {};
         var boys = [];
 
-        for (i = 0; i < 50; i++) {
+        for (var i = 0; i < 50; i++) {
             boy.name = 'boy' + (i + 1);
             boy.attractiveness = Math.floor(Math.random() * (100 - 40)) + 40;
             boy.intelligence = Math.floor(Math.random() * (100 - 40)) + 40;
@@ -165,7 +165,7 @@ module.exports = {
         var gifts = [];
         var giftType = ['utility', 'essential', 'luxury'];
         var flag = 0;
-        for (i = 0; i < 20; i++) {
+        for (var i = 0; i < 20; i++) {
             gift.id = '' + (i + 1);
             gift.value = Math.floor(Math.random() * (2000 - 100)) + 100;
             gift.type = giftType[Math.floor(Math.random() * (3 - 0)) + 0];
@@ -203,7 +203,7 @@ module.exports = {
      * @param {Object} gifts 
      */
     distribGiftsAndCalcHappiness: function (couples, girls, boys, gifts) {
-        for (i = 0; i < couples.length; i++) {
+        for (var i = 0; i < couples.length; i++) {
             var couple = couples[i];
             var boyhappiness;
             var girlhappiness;

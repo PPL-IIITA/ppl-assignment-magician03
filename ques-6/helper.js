@@ -86,7 +86,7 @@ module.exports = {
 
                 if (breakUpFlag == 1) continue;
 
-                console.log(girls[gi].name + ' ' + boys[bi].name);
+                //console.log(girls[gi].name + ' ' + boys[bi].name);
                 boy.isCommited = true;
                 girl.isCommited = true;
                 girl.commitType = girlCommitTypes[Math.floor(Math.random() * 3)];
@@ -139,7 +139,6 @@ module.exports = {
                 } else if (j == 1) {
                     girls[3 * i + j] = new GirlByRich(girl.name, girl.rating, girl.maintenanceBudget,
                         girl.intelligence, girl.isCommited);
-                    console.log('hello');
                 } else if (j == 2) {
                     girls[3 * i + j] = new GirlByIntelligent(girl.name, girl.rating, girl.maintenanceBudget,
                         girl.intelligence, girl.isCommited);
@@ -281,7 +280,7 @@ module.exports = {
     },
 
     /**
-     * Perform break up and reallocate couples
+     * Perform break up of k least happy couples and reallocate couples
      * 
      * @param {any} couples 
      * @param {any} boys 
