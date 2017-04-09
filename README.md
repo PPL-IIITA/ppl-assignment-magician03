@@ -13,6 +13,7 @@
     node ques-4/main.js
     node ques-5/main.js
     node ques-6/main.js
+    node ques-7/main.js
 ```
 
 * Output will be logged in `ques-<number>/output.log`
